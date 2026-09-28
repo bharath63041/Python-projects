@@ -1,0 +1,24 @@
+# Simple Student Management - By Bharath CSE 3rd Year
+students = []
+
+while True:
+    print("\n--- Student Menu ---")
+    print("1. Add Student")
+    print("2. View All")
+    print("3. Exit")
+    
+    choice = input("Enter choice: ")
+    
+    if choice == "1":
+        name = input("Name: ")
+        roll = input("Roll No: ")
+        students.append(name + " - " + roll)
+        print("Added Successfully!")
+        
+    elif choice == "2":
+        print("\n--- Students List ---")
+        for s in students:
+            print(s)
+            
+    elif choice == "3":
+        break 
